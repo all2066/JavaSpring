@@ -22,12 +22,24 @@ In this course we practice with Spring,
 
 ## Technologies
 * Java 11
+* IntelliJ IDEA 2021
 * Spring
 * MySQL 
 * Postman
 
 ## Commands
-
+##### JPA
+| Annotation | Description                    |
+| ------------- | ------------------------------ |
+| `@Entity`      | Declares the class as an entity or a table.       |
+| `@Table`   | Declares table name.    | 
+| `@Basic`   | Specifies non-constraint fields explicitly.     | 
+| `@Embedded`   | Specifies the properties of class or an entity whose value is an instance of an embeddable class.     | 
+| `@Id`   | Specifies the property, use for identity (primary key of a table) of the class.     | 
+| `@Column`   | Specifies the column attribute for the persistence property.     | 
+| `@ManyToMany`   | Defines a many-to-many relationship between the join Tables.     | 
+| `@ManyToOne`   | Defines a many-to-one relationship between the join Tables.     | 
+| `@OneToMany `   | Defines a one-to-many relationship between the join Tables.     | 
 
 ## Syntax
 #### To Define a Class
