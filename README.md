@@ -10,16 +10,6 @@
 ## Introduction
 The Spring Framework is an open-source application framework that provides infrastructure support for developing Java applications. One of the most popular Java Enterprise Edition frameworks, Spring helps developers create high performing applications using plain old Java objects (POJOs).
 
-#### Main topics of this project:
-* Classes 
-* Objects
-* Properties
-* Methods
-* Abstraction
-* Polymorphism
-* Inheritance 
-* Encapsulation
-
 ## Technologies
 * Java 11
 * IntelliJ IDEA 2021
@@ -42,89 +32,72 @@ The Spring Framework is an open-source application framework that provides infra
 | `@OneToMany `   | Defines a one-to-many relationship between the join Tables.     | 
 
 ## Syntax
-#### To Define a Class
-##### Java
+
+##### Starting with Spring Initializr
+###### pom.xml file that is created when you choose Maven:
 ```
-class Person{
-String name=””;
-void walk(){}
-}
-```
-##### Python
-```
-class Person:
-name=””;
-def walk():
-```
-##### JavaScript
-```
-Person.prototype.walk ) function(){
-}
-```
-##### PHP
-```
-class Person{
-$name=””;
-function walk(){}
-}
-```
-************************************
-#### Constructor Method
-##### Java
-```
-public Person(String name){
-this.name=name;
-}
-```
-##### JavaScript
-```
-function Person(name){
-this.name=name
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.3</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>integration</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>integration</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-integration</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.integration</groupId>
+			<artifactId>spring-integration-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
 ```
 
-##### PHP
-```
-public function __construct($name){
-$this->name=name;
-}
-```
-##### Python
-```
-def __int__(self,name):
-self.name=name
-```
-
-************************************
-#### Getters & Setters example in java
-```
-public Integer getPassenger()
-    {
-        return passenger;
-    }
-    public void setPassenger(Integer passenger)
-    {
-        if(passenger==4){
-            this.passenger = passenger;
-        }else{
-            System.out.println("Necesitas asignar 4 pasajeros");
-        }
-    }
-
-```
 
 
 ## Illustrations
 
-Creating app with Spring Initializr
+###### Creating app with Spring Initializr
 ![](images/1.jpg)
 **************************************
-Project structure
+###### Project structure
 ![](images/2.jpg)
 **************************************
-Postman practice
+###### Postman practice
 ![](images/3.jpg)
 **************************************
-How JWT(JSON Web Tokens) works
+###### How JWT(JSON Web Tokens) works
 ![](images/4.jpg)
 
