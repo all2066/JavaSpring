@@ -8,7 +8,7 @@
 
 
 ## Introduction
-In this course we practice with Spring, 
+The Spring Framework is an open-source application framework that provides infrastructure support for developing Java applications. One of the most popular Java Enterprise Edition frameworks, Spring helps developers create high performing applications using plain old Java objects (POJOs).
 
 #### Main topics of this project:
 * Classes 
